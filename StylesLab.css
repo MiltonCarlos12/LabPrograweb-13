@@ -1,0 +1,51 @@
+body{
+    background-color: #fafafa;
+}
+
+#titulo{
+    text-align: center;
+}
+
+section{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+#tituloTabla{
+    text-align: center;
+}
+
+footer{
+    margin: 5px;
+}
+
+ul{
+    display: flex;
+    direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    border-top: 1px solid black;
+    width: 100%;
+    background-color:#e3e3e3;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Arial, Helvetica;
+    font-size: 1.2em;
+    padding: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #fafafa;
+    color: black;
+}
