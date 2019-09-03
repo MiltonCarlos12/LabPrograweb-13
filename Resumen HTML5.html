@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 2 Eq#13</title>
+    <link rel="shortcut icon" href="Corner_Ornament.png">
+    <style>
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 3%;
+            margin-right: 3%;
+            text-justify: auto;
+        }
+
+        body{
+            background-color: #fafafa;
+        }
+
+        ul{
+            margin-left: 3%;
+            margin-right: 5%;
+        }
+
+        li{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2><a href="index.html" style='text-decoration:none;color:black'>Home</a></h2>
+    </div>
+    <section>
+        <center><h1 style="font-family: 'Courier New', Arial, Helvetica; font-size: 2.3em" >Practica 2</h1></center>
+        <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Beneficios de HTML</h2>  
+        <p>
+            HTML5 es una combinación de nuevas etiquetas de markup (lenguaje) HTML, propiedades CSS3, JavaScript y algunas tecnologías 
+            complementarias de apoyo, pero que técnicamente son independientes de la propia especificación HTML5.
+            La familia HTML5 incluye las nuevas etiquetas y tecnologías como CSS3, Geolocalización, Almacenamiento Web (Web Storage), 
+            Web Workers y Web Sockets entre otras. Todas ellas suponen una actualización de gran potencia al conjunto de herramientas ya existente, 
+            y con ellas se pueden crear páginas web más sofisticadas y útiles.
+            A día de hoy HTML no tiene capacidad para reproducir contenidos multimedia, como audio o vídeo, sin un complemento (un "plug-in") como 
+            los de Adobe® Flash® o Microsoft® Silverlight®. HTML tampoco tiene capacidad para almacenar datos en el ordenador del usuario, esto se hace 
+            actualmente mediante un lenguaje de scripting o con alguna otra tecnología. No existe un formato de dibujo nativo en HTML. Los gráficos y animaciones se ofrecen en estos momentos en forma de archivos de imágenes o con la ayuda de otros complementos.
+            El lenguaje (o "markup") HTML5 incorpora algunas etiquetas nuevas pensadas para hacer que la estructura de la página web sea más lógica y funcional. Antes de HTML5, la estructura de una página dependía fuertemente de las etiquetas div, generalmente asociadas a una clase CSS o un ID.
+        </p>
+        <br>
+        <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Los elementos audio, video y canvas</h2>
+        <p>La especificación HTML5 incluye etiquetas que nos permiten integrar contenidos multimedia sin necesidad de complementos de navegador.</p>
+        <ul>
+            <li><em>Elementos video y audio: </em> La estructura necesaria para agregar video es la etiqueta del mismo nombre, mientras que la etiqueta para agregar audio se llama audio. Ambas etiquetas van de manera parecida a la etiqueta a para hipervinculos el hipervinculo se pone en el atributo src. Esta característica de HTML5 
+                es muy útil si se compara con los métodos disponibles hasta ahora. Por ejemplo, para incorporar vídeo con Adobe Flash o Microsoft Silverlight es preciso añadir código de programación. Aparte, existe una amplia categoría de dispositivos móviles como los iPhone® de Apple® o Windows® Phone 7 que no soportan Flash o Silverlight, y en estos casos el elemento video de HTML5 es la principal alternativa.</li>
+            <br>
+            <li><em>Canvas: </em> El elemento canvas funciona a modo de superficie de dibujo dentro de una página web (de ahí le viene el nombre). Dentro de esta superficie de dibujo podemos crear formas con colores, gradientes y patrones de relleno. Podemos manipular los pixels de forma interactiva en pantalla, mostrar textos y exportar los contenidos hacia archivos de imagen estática, como .PNG. Podemos también utilizar JavaScript o las nuevas funciones de animación de CSS3 para que los objetos que 
+                creamos puedan moverse, desaparecer, cambiar de tamaño, etc. </li>
+        </ul>
+        <br>
+        <center><h1>Dibujo de lineas</h1>
+            <p>
+            <br/>Cada boton controla una esquina.
+                <br/>1.-Esquina superior izquierda 3.-Esquina superior derecha
+                <br/>2.-Esquina inferior izquierda 4.-Esquina inferior derecha
+                <br/>Escribe el numerio de lineas que quieres por esquina en cada caja.
+            </p>
+            <p>
+                <input type="text" id="caja_uno" />
+                <input type="button" value="1" id="boton_uno" />
+                <input type="text" id="caja_tres" />
+                <input type="button" value="3" id="boton_tres" />
+            </p>
+            <p>
+                <input type="text" id="caja_dos" />
+                <input type="button" value="2" id="boton_dos" />
+                <input type="text" id="caja_cuatro" />
+                <input type="button" value="4" id="boton_cuatro"/>
+            </p>
+            <canvas width="300" height="300" id="dibujito"></canvas>
+            <br/>
+            <script src="dibujo.js"></script>
+        </center>
+        <br>
+        <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Etiqueta de Video</h2>
+        <p>La etiqueta cuenta con el atributo width el cual su signidicado es ancho y height que es la altura.
+        </p>
+        <ul>
+            <li>width:ancho</li>
+            <li>height:alto</li>
+            <li>controls:controles</li>
+            <li>autoplay:reproducir automaticamete</li>
+            <li>srs:contenido del video</li>
+        </ul>
+        <center><video width="800" src="Facultad de Ingeniería Mecánica y Eléctrica.mp4" controls title="Facultad de Ingenieria Mecanica y Electrica"></video></center>
+    </section>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Etiqueta de Audio</h2>
+    <ul>
+        <li>Controls: atributo agrega controles de audio, como reproducción, pausa y volumen.</li>
+        <li>El <source>elemento le permite especificar archivos de audio alternativos que el navegador puede elegir. El navegador usará el primer formato reconocido.</li>
+        <li>El texto entre el y etiquetas sólo se mostrará en los navegadores que no soportan el <audio>elemento.</li>
+    </ul>
+    <center><audio src="Cancion.mp3" controls></audio></center><br>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Figcaption y figure</h2>
+    <p>Figcaption define un titulo para un elemento</p>
+    <center>
+        <figure>
+            <img src="https://www.utel.edu.mx/blog/wp-content/uploads/2013/06/shutterstock_33401326.jpg" width="600">
+            <figcaption>Figura 1: Tecnologías de la información</figcaption>
+        </figure>
+    </center><br>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Nuevo en HTML5</h2>
+    <p>HTML5 además resuelve el caso de ciertas etiquetas que aparecen en HTML 4.01 pero que han quedado obsoletas o necesitaban ciertas precisiones, como 
+        ocurre con i, b, small, strong y abbr, que ahora tienen significados y usos nuevos con HTML5.</p><br>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">¿Qué es una API?</h2>
+    <p>Las APIs (Application Programming Interfaces o, en español, Interfaces de Programación de Aplicaciones o simplemente "interfaces de programación") son 
+        una forma de crear aplicaciones utilizando componentes preconfigurados cuyo uso no se restringe a la web.Ofrecen APIs al público de manera que los diseñadores y desarrolladores 
+        pueden con ellas integrar algunas de sus funcionalidades dentro de sus propios sitios web (y también sirven para otros fines, como por ejemplo para crear aplicaciones para teléfonos móviles o aplicaciones personalizadas para equipos 
+        de escritorio). Uno de los objetivos principales de una API es el de normalizar el modo de trabajo de ciertos mecanismos y simplificar tareas de programación, que de lo contrario, 
+        serían bastante complejas. Las APIs son un aspecto muy importante dentro del entorno de HTML5 y hay una serie de ellas que conviene conocer, como Web Storage, Microdata o Geolocation,
+         entre otras</p><br>
+    <h3>Ejemplo de API</h3>
+    <center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.335670572414!2d-100.31409248566115!3d25.72641081634062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662945396e136af%3A0x742b1e8288ee57a8!2sUniversidad%20Aut%C3%B3noma%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1sen!2smx!4v1567512024991!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </center>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Word Workers(API)</h2>
+    <p> es un marco de programación que resuelve problemas de rendimiento de los navegadores. Al acceder a aplicaciones web avanzadas, como las de mapas o aquellas que generan gráficos o diagramas al entrar en la página web, se inician ciertas operaciones de computación que consumen una gran cantidad de recursos de procesador y que pueden reducir notablemente el rendimiento de la aplicación. 
+    </p>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Almacenamiento Web</h2>
+    <p>
+            El Almacenamiento Web (Web Storage) es un ejemplo de uso de modelos preexistentes de tecnologías web bajo nuevas modalidades, más potentes. 
+            El Web Storage mejora el concepto de cookies del navegador. Actualmente las cookies permiten que los sitios web puedan guardar información en cantidades 
+            muy reducidas en los equipos de los usuarios, datos que normalmente sirven para volver a utilizarlos en momentos posteriores, y de esta manera, por ejemplo, 
+            ciertos sitios web recuerdan la información del usuario desde el último acceso.<br>
+            El Almacenamiento Web (Web Storage) es un ejemplo de uso de modelos preexistentes de tecnologías web bajo nuevas modalidades, más potentes. El Web Storage mejora 
+            el concepto de cookies del navegador. Actualmente las cookies permiten que los sitios web puedan guardar información en cantidades muy reducidas en los equipos de los usuarios, datos que normalmente 
+            sirven para volver a utilizarlos en momentos posteriores, y de esta manera, por ejemplo, ciertos sitios web recuerdan la información del usuario desde el último acceso.
+    </p>
+    <center><img src="https://www.osi.es/sites/default/files/images/blog/cookies_internet.png" title="Imagen cookies"></center>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">CSS3 no forma parte de HTML5 pero esta realacionado</h2>
+    <h3 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Transformaciones CSS 2D y 3D</h3>
+    <p>
+        La propiedad transform de CSS nos permite rotar, cambiar la escala o sesgar un elemento de una página web.
+    </p>
+    <h3 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Fondos, bordes, colores RGBa, gradientes, sombras y esquinas redondeadas</h3>
+    <p>
+        CSS3 es posible aplicar mejoras muy interesantes a la presencia visual de una página, también podemos crear muchos efectos nuevos, como gradientes de color o sombreados.
+        La descripción del espacio de color RGBa es otra novedad de CSS3, ya que la "a" representa el grado de transparencia (o "alpha"). Con la notación RGBa de color ahora podemos aplicar efectos de transparencia a cualquier objeto de la página.
+    </p>
+    <h3 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Fuentes de letra Web</h3>
+    <p>
+        El soporte para añadir tipos de letra especiales a las páginas web mediante la propiedad @font-face, que permite especificar una fuente concreta y un enlace desde el cual el navegador pueda descargarla.
+    </p>
+    <h3 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Media Queries de CSS</h3>
+    <p>
+        Lanzar una consulta al navegador para determinar el tipo de pantalla en el cual se va a restituir la página y, a partir de esta información, enviar un estilo específico, optimizado para esas dimensiones. 
+    </p>
+    <h2 style="margin-left: 10%; font-family: 'Courier New', Arial, Helvetica">Funcionalidades y características futuras de HTML5</h2>
+    <ul>
+        <li><em><b>Drag and Drop:</b></em> operaciones Drag-and-Drop ("arrastrar y soltar") permiten al usuario mover en pantalla los elementos de forma visual en lugar de hacerlo pulsando botones. La API Drag and Drop de HTML5 se basa en la implementación original de Internet Explorer.</li>
+        <li><em><b>La API File (Archivo):</b></em> La API llamada "File" (Archivo) permite a los desarrolladores acceder a archivos del disco duro de la máquina cliente sin necesidad de instalar extensiones o complementos.</li>
+        <li><em><b>Disposición de objetos en pantalla con Flexbox:</b></em> CSS3 introduce una nueva forma de crear diseños para la distribución de los objetos en pantalla, llamado Flexible Box Layout ("Flexbox"). En este sistema se pueden crear disposiciones fluidas sin necesidad de acudir a las habituales directivas "float" y "clear" de CSS. </li>
+        <li><em><b>Distribuciones en rejilla y columnas múltiples:</b></em>columnas múltiples y rejillas ("grids") son dos mejoras más orientadas a facilitar la presentación visual de las páginas web. La propiedad Multi-column de CSS nos permite distribuir un contenido (puede ser un bloque de texto, por ejemplo) en dos o más columnas, facilitando así su lectura sin tener que recurrir a complicados juegos visuales.</li>
+    </ul>
+    <hr>
+    <center>
+        <h3 style="margin-left: 0%; font-family: 'Courier New', Arial, Helvetica">Bibliografia</h3>
+        <a href="https://gutl.jovenclub.cu/wp-content/uploads/2013/10/El+gran+libro+de+HTML5+CSS3+y+Javascrip.pdf" target="_back">El Gran Libro de HTML5,CSS3 y Javascrip</a><br>
+        <a href="https://msdn.microsoft.com/es-es/ie/hh749020" target="_back">Microsoft® HTML5</a><br>
+        <a href="https://www.w3schools.com/" target="_back">w3schools</a>        
+    </center>
+</body>
+</html>
