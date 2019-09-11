@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 3</title>
+    <link rel="shortcut icon" href="/Corner_Ornament.png">
+    <link rel="stylesheet" href="Practica 3 Styles.css">
+</head>
+<body>
+    <div>
+        <h2><a href="index lab progra web.html" id="return">Home</a></h2>
+    </div>
+    <section>
+        <center><h1>Practica 3</h1></center>
+        <h2>Cascading Style Sheets</h2>  
+        <p>
+            Cuando se empezó con el diseño web a mediados de los 90, el único método que se podía emplear para crear estructuras visuales complejas, como por ejemplo la presentación en varias columnas, consistía en emplear el elemento tabla. La tabla HTML estaba pensada inicialmente para mostrar datos de manera estructurada, en filas, columnas y celdas. Sin embargo los diseñadores empezaron a utilizar este elemento como base para las estructuras visuales de las páginas. En aquel momento esa técnica estaba plenamente justificada: las tablas era lo único que tenían para generar el tipo de diseños que se necesitaban y, además, eran un recurso extremadamente flexible. 
+        </p>
+        <p>
+            A partir de aquí, empezaron a utilizarse técnicas como el anidamiento de tablas, es decir, crear tablas dentro de celdas de otras tablas de mayor tamaño. Por ejemplo, el código para una página normal de dos columnas podía empezar creando una tabla de tres filas y dos columnas:
+        </p>
+        <figure>
+            <img src="Tabla 1.jpg">
+        </figure>
+        <br>
+        <p>Puesto que la primera fila se iba a convertir en la sección de cabedera, no interesaría que quedase dividida en dos columnas. La etiqueta HTML colspan permite fusionar las dos celdas:</p>
+        <figure>
+            <img src="Tabla 2.jpg">
+        </figure>
+        <br>
+        <p>
+            Una tabla cuya primera fila consta de dos celdas fusionadas en una sola.
+        </p>
+        <p>
+            En esta primera fila el diseñador, por ejemplo podía intentar insertar una sección independiente de tres columnas, para mostrar un logo y otros elementos, como una barra de navegación o un campo para pedir credenciales de usuario. Para añadir esta sección, el diseñador tenía que crear una nueva tabla (esta vez con una fila de tres columnas) dentro de la primera fila de la tabla inicial:
+        </p>
+        <figure>
+            <img src="Tabla 3.jpg">
+        </figure>
+        <br>
+        <p>
+            Una nueva tabla, con una fila y tres columnas, anidada dentro de la primera fila de la tabla original.
+        </p>
+        <p>
+            Para generar esta estructura de tabla, el diseñador tenía que configurar la tabla inicial con una anchura y altura fijas. Supongamos que el diseñador también quisiera un borde negro fino para todos los elementos. La propiedad “border” de las tablas HTML es muy básica no nos permite añadir colores. Una solución frecuente consistía en insertar la tabla actual dentro de otra, que consistía simplemente en una única celda con el fondo en color negro. Al modificar el margen interior y el color de fondo, y fusionar otras celdas más, el diseñador podía así crear una estructura visual basada en tablas con un cierto estilo.
+        </p>
+        <figure>
+            <img src="Tabla 4.jpg">
+        </figure>
+        <br>
+        <h2>Añadir estilos para el texto</h2>
+        <p>
+            Antes de seguir con nuestra estructura visual vamos a importar algunos estilos de texto basados en los que hemos creado en la Lección 2. Hasta aquí hemos añadido los estilos dentro de una hoja de estilos interna en vez de hacerlo sobre una externa. Cuando estamos diseñando la estructura de las páginas, el empleo de hojas de estilo internas es una cuestión de comodidad: resulta más sencillo para crear y modificar reglas si las tenemos dentro de la página y podemos llegar a ellas desplazando la ventana que si las tenemos en un archivo externo. De momento vamos a asociar una hoja de estilos externa que añade reglas de base para elementos como títulos, listas y párrafos.
+        </p>
+        <p>
+            Existen algunas propiedades CSS adicionales aplicables a las fuentes, como “font-weight”, “text-transform” o “letter-spacing”. Si quieres más información e instrucciones paso a paso para utilizar técnicas avanzadas de estilos para texto, puedes leer la Lección 3 “Formateo de Textos con CSS” en el libro “HTML5 Digital Classroom”.
+        </p>
+        <br>
+        <h2>Aplicar una imagen de fondo al pie de página</h2>
+        <p>
+            Hasta ahora nuestra estructura de página muestra los colores de fondo que hemos declarado a los elementos div. En esta práctica vas a aprender a insertar imágenes. Para ello empezaremos por añadir una imagen de fondo al pie de página mediante CSS.
+        </p>
+        <figure>
+            <img src="Imagen 1.jpg">
+        </figure>
+        <br>
+        <p>
+            La imagen de fondo ahora aparece detrás de los textos. Fíjate en la propiedad background-repeat del código anterior. CSS, por defecto, considera a las imágenes de fondo como “baldosas” que se van añadiendo sin límite hasta llenar todo el espacio del objeto al que pertenecen.  Al indicar el valor no-repeat nos aseguramos que la imagen solo se muestra una vez. Las dimensiones del pie de página deben ser tales que nos permitan ver la imagen correctamente, tal y como veremos en el paso siguiente.
+        </p>
+        <p>
+            Aquí se añade un margen superior de 10 pixels y margen izquierdo de 20 pixels a ambos párrafos del pie. Al definir la anchura de los párrafos podemos forzar un salto de línea en el punto aproximado que nos interesa: dentro del espacio en blanco que nos deja la foto. Las propiedades “font-family” y “font-size” nos ayudarán a conseguir un efecto más atractivo con un tipo de letra más pequeño.
+        </p>
+        <figure>
+            <img src="Imagen 2.jpg">
+        </figure>
+        <br>
+        <h2 id="Conclusiones">Conclusiones</h2>
+        <h3>Eliud Santander</h3>
+        <p>
+            HTML a pesar de ser un sistema de etiquetas muy completo para introducir informacion en un navegador web es muy importante el uso de una hoja de estilos CSS pues ha ganado su lugar como el principal lenguaje de los diseñadores web para crear paginas con estilos que sean atractivos para el que utilice las paginas. Gracias a que se ha ido actulizando en gran medida este lenguaje ahora nos otorga muchas mas facilidades a la hora de diseñar un programa, tanto es el caso que actualmente las pagias web que no utilizan css como hoja de estilos son practicamente nulas.
+        </p>
+        <h3>Milton Garza</h3>
+        <p>
+            CSS brindo mucho apoyo al desarrollo del diseño de las paginas, de pasar a ser un diseño por medio de tablas dentro de tablas para poder lograr tener una estructura en la cual trabajar por cuadrantes, CSS revoluciono el poder hacer un diseño más rápido y hasta cierto punto mas vistoso logrando con eso poder darle color y mover los elementos dentro de toda la página, también poder cambiar el fondo, la letra de los elementos o etiquetas, que cuenta con distintas versiones y de igual manera poder hacer cambio del tamaño de los componentes.
+        </p>
+        <h3>Saul Hilario</h3>
+        <p>
+            CSS como lenguaje para definir estilos y la forma en cómo se ve un sitio web ha evolucionado mucho a lo largo de la historia. Dado lo funcional de las últimas mejoras con la versión CSS3 se han generado nuevas reglas que pueden cubrir muchos aspectos que todo diseñador y desarrollador web está buscando. Con este curso podrás entender mejor los selectores, trabajar mejor con el texto y las animaciones, así como sacar el mejor provecho de los media queries para la construcción de sitios web y algunos trucos que harán que tu sitio o aplicación web luzca espectacular.
+        </p>
+    </section>
+</body>
+</html>
