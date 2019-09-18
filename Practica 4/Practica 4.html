@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 4</title>
+    <link rel="shortcut icon" href="Corner_Ornament.png">
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="shortcut icon" href="Corner_Ornament.png">
+</head>
+<body>
+    <div>
+        <h2><a href="../index.html" id="return">Home</a></h2>
+    </div>
+    <section>
+        <center><h1>Practica 4</h1></center>
+        <h2>La estructura de la página web se basa en HTML</h2>  
+        <p>
+            Los documentos HTML (iniciales de Hypertext Markup Language) utilizan la extensión .htm o .html. Esta extensión avisa al navegador web o a un dispositivo como un teléfono móvil, que en este archivo hay contenido HTML y dicho contenido se restituye en la ventana del navegador o la pantalla del dispositivo siguiendo las reglas del lenguaje HTML.
+        </p>
+        <p>
+            Las etiquetas se utilizan para definir el contenido de una página HTML. Estas etiquetas quedan enmarcadas dentro de los símbolos "menor que" (<) y "mayor que" (>) y se ponen al principio y al final de un objeto o texto utilizado en la página HTML.
+        </p>
+        <p>
+            HTML y XHTML están estrechamente relacionados. Existe una lista de reglas definidas por el World Wide Web Consortium (organismo de normalización que también se conoce como W3C) que especifican los límites de HTML y XHTML.
+        </p>
+        <br>
+        <h2>Detalles de la sintaxis de XHTML</h2>
+        <p>
+            Hay una diferencia esencial entre HTML 4.0 y XHTML 1.0 – los dos estándares más recientes publicados por el W3C (World Wide Web Consortium). Tal y como está definido el XHTML, las páginas escritas en XHTML se pueden ver también en los navegadores que muestran las páginas HTML actuales. Las etiquetas y atributos de XHTML y HTML siguen siendo las mismas, pero la sintaxis del código XHTML es más estricta.
+        </p>
+        <p>Las diferencias más importantes entre XHTML y HTML son estas:</p>
+        <ul>
+            <li>En XHTML, todas las etiquetas deben escribirse en minúsculas.</li>
+            <li>XHTML exige que todas las etiquetas de apertura lleven su correspondiente etiqueta de cierre, es decir, siempre debe existir una etiqueta al principio y otra al final de cualquier elemento, sea un título, párrafo, imagen u otro.  Aun en el caso de etiquetas especiales que técnicamente no necesitan etiquetas de apertura y cierre.</li>
+            <li>XHTML exige que en el anidamiento de etiquetas se cierren primero las etiquetas abiertas mas adentro del anidamiento y por ultimo las mas exteriores</li>
+        </ul>
+        <br>
+        <h2>Doctype indica al navegador qué debe esperar</h2>
+        <p>
+            Al inicio de toda página web debe aparecer una declaración Doctype. La declaración de "tipo de documento" le aporta pistas al navegador sobre el tipo de información que se va a encontrar en la página. Puesto que las especificaciones de HTML y XHTML son distintas, el navegador sabe así qué lenguaje va a interpretar y representar. El navegador restituye la página empezando por la primera línea y va avanzando de principio a fin, por lo que esta indicación en la primera línea de todas tiene pleno sentido.
+        </p>
+        <br>
+        <h2>Estructura HTML</h2>
+        <p>
+            Uno de los conceptos más importantes que debemos dominar a la hora de diseñar contenidos web es la estructura anidada de los documentos HTML. Los elementos suelen presentarse contenidos unos dentro de otros. Por lo general tenemos que empezar por diseñar la estructura HTML de la página para después continuar con los estilos, aplicando CSS.
+        </p>
+        <br>
+        <h2>Insertar imágenes en HTML</h2>
+        <p>
+            Para colocar imágenes dentro de un documento HTML se utiliza la etiqueta (img). Al igual que ocurre con la etiqueta (a), la etiqueta de imagen por sí sola no hace nada. Depende del valor de los atributos que especifiquemos, que indican qué imagen se debe mostrar y cómo ha de hacerse. Para insertar una imagen con la etiqueta (img) es necesario introducirle el atributo src del ingles source e indicar la direccion de la imagen que esta buscando para insertar (img src="Direccion de la imagen.jpg"). Si se desea aplicar estilos especiales a la imagen se utiliza la hoja de estilos CSS.
+        </p>
+        <figure>
+            <img src="imagen ejemplo.jpg" width="500px">
+        </figure>
+        <br>
+        <h2>El papel de CSS</h2>
+        <p>
+            CSS (Cascading Style Sheets) utiliza un lenguaje distinto de HTML. CSS nos permite aplicar estilos de manera coherente a los distintos elementos de las páginas del sitio web, de modo que los títulos, listas y párrafos pueden verse igual en todas y cada una de las páginas.
+        </p>
+        <br>
+        <h2>Los estilos de clase y el elemento (span)</h2>
+        <p>
+            Los selectores de etiqueta se utilizan con mucha frecuencia, pero solo se pueden aplicar a elementos HTML. Cuando lo que queremos es modificar el estilo de alguna cosa que no coincide exactamente con una etiqueta, por ejemplo cambiar el color de una única palabra dentro de un párrafo, el selector de etiqueta no es una buena opción (e incluso en algunas ocasiones resulta imposible de aplicar). En este caso podemos utilizar el selector de clase, que es una regla CSS que se puede aplicar a cualquier elemento dentro de una página. Los selectores de clase tienen unas opciones de nomenclatura flexibles, pero es muy conveniente utilizar nombres que describan adecuadamente lo que hacen. 
+        </p>
+        <br>
+        <h2>Tres maneras de utilizar estilos</h2>
+        <p>
+            Cuando el documento HTML cuenta con estilos propios dentro de la etiqueta (head) se dice que se utiliza una hoja de estilos interna.
+        </p>
+        <p>
+            Una hoja de estilo externa es un documento independiente con la extensión .css. Cuando utilizamos un archivo externo, los estilos se definen en él y en las páginas HTML tenemos que insertar un enlace a dicho archivo. Mientras que las hojas de estilo internas solo se aplican a la página donde residen, las hojas externas se pueden aplicar a múltiples documentos HTML.
+        </p>
+        <p>
+            Los estilos inline o directos son la tercera posibilidad pero se utilizan mucho menos que las otras dos. En este caso, las reglas se declaran dentro de las propias etiquetas HTML. Un ejemplo de estilo inline para escribir en rojo el texto del título puede ser:
+        </p>
+        <p>
+            <center>(h1 style="color:red")Worldwide Apparel(/h1)</center>
+        </p>
+        <center><h1 style="color:red">Worldwide Apparel</h1></center>
+        <br>
+        <h2>Uso de textos y tipos de letra en la web</h2>
+        <p>
+            A la hora de diseñar para la web, podemos formatear el texto de una forma parecida a como se hace en las aplicaciones de procesamiento de textos y diseño publicitario de los equipos de escritorio, pero debemos tener en cuenta algunas diferencias importantes. Cuando especificamos el uso de una fuente (tipo de letra) concreta, esta fuente ha de estar instalada en el ordenador o el dispositivo del usuario donde se va a restituir la página. Si el ordenador o dispositivo no dispone de esa fuente, el navegador la sustituye por otra.
+        </p>
+        <p>
+            Puesto que es imposible saber qué fuentes están instaladas en los ordenadores de los usuarios, y debido a la capacidad que tienen los navegadores para sustituir unos tipos de letra por otros, es posible que los resultados obtenidos en ciertos equipos no se correspondan con el diseño que hemos previsto. Una opción puede ser utilizar fuentes que sabemos que podemos encontrar en la mayoría de los ordenadores. Lo malo es que son muy pocas estas fuentes de las cuales podemos tener la certeza de que se encuentran en prácticamente todos los ordenadores del mundo
+        </p>
+        <br>
+        <h2>Cambiar el tamaño del texto con CSS</h2>
+        <p>
+            Cuando utilizamos CSS para formatear textos para la web, disponemos de algunas opciones para establecer su tamaño y su grosor. La propiedad CSS que controla el tamaño del texto se llama font-size. Podemos modificar el valor de la propiedad font-size de varias formas:
+        </p>
+        <ul>
+            <li><strong>Tamaño absoluto:</strong> se trata de una serie de palabras clave que indican tamaños predefinidos de letra. Los tamaños nominados escalan de acuerdo con las preferencias del usuario con respecto a la letra. Los valores posibles xx-small, x-small, small, medium, large, x-large y xx-large.</li>
+            <li><strong>Longitud:</strong>Es un número seguido de un indicador del sistema de medida (cm, mm, in, pt, o pc) o bien un de unidades relativas (em, ex, o px).</li>
+            <li><strong>Porcentaje:</strong> Un entero seguido del signo de porcentaje (%). El valor es un tanto por ciento del tamaño de letra del objeto padre.</li>
+            <li><strong>Tamaño relativo:</strong>  una serie de palabras clave que se interpretan como relativas al tamaño de letra del objeto padre. Los valores posibles son larger y smaller.</li>
+        </ul>
+        <p>
+            La elección de la unidad de medida para el tamaño de la letra en una página web es importante y no es tan fácil como parece. La principal dificultad en este sentido tiene que ver con la resolución de la pantalla y las distintas maneras en que, a lo largo del tiempo, los navegadores han resuelto la presentación de los textos.
+        </p>
+        <p>
+            Tambien se puede utilizar la unidad de pt que se refiere a los puntos como si de un documento de word se tratara.
+        </p>
+        <br>
+        <ol>
+            <strong><li>¿Que es un XML y para que sirve?</li></strong>
+            <p>XML (Extensible Markup Language) es un lenguaje de etiquetas, es decir, cada paquete de información está delimitado por dos etiquetas como se hace también en el lenguaje HTML, pero XML separa el contenido de la presentación. Su objetivo es facilitar la representación, almacenamiento y trasmisión de información varia por parte de aplicaciones informáticas, computadoras y medios de comunicación digital en general.</p>
+            <strong><li>¿Que caracteristicas tiene un documento HTML?</li></strong>
+            <p>XML es un  formato universal para documentos y datos estructurados en Internet; este estándar permite el intercambio de información estructurada entre diferentes plataformas. Por lo que se  puede usar en bases de datos, editores de texto, hojas de cálculo y casi cualquier cosa imaginable.</p>
+            <strong><li>¿Que es y para que sirve un archivo XHTML?</li></strong>
+            <p>El lenguaje XHTML surgió ante los problemas de compatibilidad que surgían cuando se usaba un documento HTML en distintas plataformas. La especificación XHTML viene a ser una reformulación del HTML como aplicación XML. En realidad, es una reformulación de las tres definiciones de tipo de documento HTML 4.0 como aplicaciones XML. Su finalidad es que pueda ser usado como lenguaje de contenidos que sea a su vez conforme a XML y, si se siguen algunas sencillas directrices, funciona en agentes de usuario (esto es, las aplicaciones que leen y procesan documentos) conformes con HTML</p>
+        </ol>
+        <h2 id="Conclusiones">Conclusiones</h2>
+        <h3>Eliud Santander</h3>
+        <p>
+            Los documentos HTML se pueden apoyar de muchos otros recursos como las hojas de estilos CSS, pero se debe de tener en consideracion las eglas y las maneras correctas de emplear las hojas de estilos. Tambien se puede utilizar el XML para definir lenguajes de marcado como el mismo HTML para darle un uso adecuado, ademas XML es muy parecido a HTML con unas muy pequeñas diferencias, pero ambos trabajan con etiquetas que marcan cada seccion del documento y en ambos casos las etiquetas cuentann con herencia, es decir etiquetas padre, etiquetas hijo y etiquetas hermanos. 
+        </p>
+        <h3>Milton Garza</h3>
+        <p>
+            XHTML es un complemento por llamarlo de una formar o extension de HTML, el cual genera un documento estandar
+para poder transferir datos de manera estructurada, tambien cuenta con una sintaxis más estricta en cuanto a etiquetas
+nos referimos, recordando que XHTML proviene de HTML no son precisamente iguales como XHTML añade unas restricciones a las
+etiquetas ya existentes de HTML.
+        </p>
+    </section>
+</body>
+</html>
