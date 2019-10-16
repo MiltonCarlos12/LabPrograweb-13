@@ -1,0 +1,8 @@
+body{
+    background: #ffff88;
+}
+
+h1, h2 {
+    background:#3CAF23;
+    display: inline-block;
+}

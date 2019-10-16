@@ -1,3 +1,7 @@
+.caja_principal{
+    margin: 40px;
+}
+
 p{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 3%;
@@ -7,15 +11,6 @@ p{
 
 body{
     background-color: #fafafa;
-}
-
-ul{
-    margin-left: 3%;
-    margin-right: 5%;
-}
-
-li{
-    font-family: Arial, Verdana, sans-serif;
 }
 
 #return{
@@ -29,20 +24,22 @@ h1{
 }
 
 h2{
+    width: 200px;
     margin-left: 10%;
     font-family: 'Courier New', Arial, Helvetica;
+    display: inline-block;
 }
 
-figure{
-    text-align: center;
+#ht{
+    width: 400px;
 }
 
-figure img{
-    border-radius: 20px;
-    box-shadow:  rgb(177, 177, 177) 4px 4px 5px;
+.seguidos{
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
 }
 
-#Conclusiones{
-    text-align: center;
-    font-size: 2.5em;
+#titulo{
+    width: 600px;
 }
