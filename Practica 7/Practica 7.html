@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 7</title>
+    <link rel="shortcut icon" href="../Corner_Ornament.png">
+    <link rel="stylesheet" href="EstiloCheckers.css">
+    <link rel="stylesheet" href="Estilos.css"> 
+</head>
+<body>
+    <div>
+        <h2><a href="../index.html" id="return">Home</a></h2>
+    </div>
+    
+    <center><h1>Practica 7</h1></center>
+    
+    <section>
+        <center>
+            <p>Arrastra las figuras para crear un personaje:</p>
+            <aside id="BarraDerecha">
+                <img id="drag1" src="PiernasPacman.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag2" src="PacmanCabeza.png" draggable="true" ondragstart="drag(event)">
+                <br>
+                <img id="drag3" src="PikachuCabeza.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag4" src="GruPiernas.png" draggable="true" ondragstart="drag(event)">
+                <br>
+                <img id="drag5" src="PikachuCuerpo.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag6" src="PikachuPierna.png" draggable="true" ondragstart="drag(event)">
+            </aside>
+            <aside id="BarraIzquierda">
+                <img id="drag7" src="GruCuerpo.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag8" src="MinionCabeza.png" draggable="true" ondragstart="drag(event)">
+                <br>
+                <img id="drag10" src="MinionCuerpo.png" draggable="true" ondragstart="drag(event)">
+                <img id="drag11" src="MinionPiernas.png" draggable="true" ondragstart="drag(event)">
+                <br>
+                <img id="drag9" src="GruCabeza.png" draggable="true" ondragstart="drag(event)">
+            </aside>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </center>
+    </section>    
+    <script>
+        function allowDrop(ev) {
+        ev.preventDefault();
+        }
+      
+        function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+        }
+      
+        function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+        }
+                
+    </script>  
+</body>
+</html>

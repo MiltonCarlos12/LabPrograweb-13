@@ -1,0 +1,20 @@
+
+#div1 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #aaaaaa;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+#BarraIzquierda{
+    float: left;
+}
+
+#BarraDerecha{
+    float: right;
+}
+  
